@@ -12,8 +12,8 @@ func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", healthCheckHandler)
-	fmt.Println("Server berjalan di port 8080...")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	fmt.Println("Server berjalan di port 8090...")
+	if err := http.ListenAndServe(":8090", nil); err != nil {
 		panic(err)
 	}
 }
